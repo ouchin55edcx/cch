@@ -41,6 +41,9 @@ public class Competition {
     @OneToMany(mappedBy = "competition")
     private Set<Stage> stages;
 
+    @OneToMany(mappedBy = "competition")
+    private Set<GeneralResult> generalResults;
+
 
 
 

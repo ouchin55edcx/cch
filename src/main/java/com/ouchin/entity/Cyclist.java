@@ -43,6 +43,7 @@ public class Cyclist {
     @ManyToMany(mappedBy = "cyclists")
     private Set<Competition> competitions;
 
-
+    @OneToMany(mappedBy = "cyclist")
+    private Set<GeneralResult> generalResults;
 
 }
