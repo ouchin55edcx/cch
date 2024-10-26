@@ -1,4 +1,4 @@
-package com.ouchin.entity.PhaseType;
+package com.ouchin.entity.enums;
 
 public enum StageType {
     TIME_TRIAL,

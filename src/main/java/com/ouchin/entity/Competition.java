@@ -7,6 +7,7 @@ import lombok.Data;
 
 import java.time.Duration;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Set;
 
 @Data
@@ -35,10 +36,7 @@ public class Competition {
     @Column(nullable = false)
     private Duration duration;
 
-    @ManyToMany(mappedBy = "competitions")
-    private Set<Cyclist> cyclists;
-
-    @OneToMany(mappedBy = "competition")
+    @OneToMany(mappedBy = "competition",  cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Stage> stages;
 
     @OneToMany(mappedBy = "competition")

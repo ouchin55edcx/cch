@@ -1,7 +1,7 @@
     package com.ouchin.entity;
 
 
-    import com.ouchin.entity.PhaseType.StageType;
+    import com.ouchin.entity.enums.StageType;
     import jakarta.persistence.*;
     import jakarta.validation.constraints.NotBlank;
     import jakarta.validation.constraints.NotNull;
